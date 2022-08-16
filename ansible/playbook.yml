@@ -15,16 +15,6 @@
       ansible.builtin.pip:
         name: docker
 
-    - name: Create user
-      ansible.builtin.user:
-        name: deploy
-        groups: docker
-
-    - name: Add ssh key
-      ansible.posix.authorized_key:
-        user: deploy
-        key: "{{ lookup('file', pvt_key) }}"
-
 - name: Deploy application
   hosts: all
   remote_user: deploy
