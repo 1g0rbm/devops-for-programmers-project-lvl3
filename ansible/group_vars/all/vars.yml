@@ -1,3 +1,6 @@
+pip_install_packages:
+  - name: docker
+
 datadog_site: "us3.datadoghq.com"
 datadog_checks:
   http_check:

@@ -1,8 +1,8 @@
-collections:
-  - name: community.general
-  - name: community.docker
-    version: 2.7.1
-
 roles:
   - name: geerlingguy.pip
   - name: datadog.datadog
+
+collections:
+  - name: community.docker
+    version: 2.7.0
+  - name: community.general
