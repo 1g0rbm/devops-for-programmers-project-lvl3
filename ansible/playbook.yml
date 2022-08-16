@@ -14,11 +14,6 @@
   become: true
 
   tasks:
-    - name: Log into DockerHub
-      community.docker.docker_login:
-        username: 1g0rbm
-        password: "{{ docker_password }}"
-
     - name: Run container
       community.docker.docker_container:
         name: Application
