@@ -1,0 +1,3 @@
+.vscode
+terraform/backend.conf
+terraform/secrets.auto.tfvars

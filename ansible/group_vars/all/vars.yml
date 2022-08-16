@@ -1,0 +1,9 @@
+datadog_site: "us3.datadoghq.com"
+datadog_checks:
+  http_check:
+    init_config:
+    instances:
+      - name: devops_project_3_status
+        url: http://localhost:3000
+        timeout: 5
+        method: GET

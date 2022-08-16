@@ -1,0 +1,6 @@
+collections:
+  - community.docker
+
+roles:
+  - name: geerlingguy.pip
+  - name: datadog.datadog
